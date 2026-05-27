@@ -1,0 +1,262 @@
+# ==========================================
+# Core Hugo Settings
+# ==========================================
+baseURL: "/"                                  # Optimized for local development
+languageCode: "en-us"
+title: "Preeti Manoharan | Finance & Data Specialist"
+theme: hugo-profile
+
+defaultContentLanguage: "en"
+enableRobotsTXT: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true                           # Allows Markdown to render raw HTML/icons correctly
+
+# ==========================================
+# Main Menu Navigation Links
+# ==========================================
+Menus:
+  main: []
+
+# ==========================================
+# Global Custom Parameters
+# ==========================================
+params:
+  title: "Preeti Manoharan"
+  description: "Finance Specialist & Data Analyst Portfolio"
+  favicon: "images/pm-svg.svg"
+  animate: true                              # Toggles the homepage fade animations
+  useBootstrapCDN: false
+
+  font:
+    fontSize: 1rem 
+    fontWeight: 400 
+    lineHeight: 1.5 
+    textAlign: left 
+
+  navbar:
+    align: ms-auto 
+    brandName: "Preeti Manoharan" 
+    disableSearch: true                      # Simplified navbar layout
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false                    
+      disableExperience: false               
+      disableEducation: false                # FIXED: Turned on to show the Education tab
+      disableProjects: false                  # Turn on if adding case studies later
+      disableAchievements: true
+      disableContact: false
+
+  # ----------------------------------------
+  # Hero Section (Top Splash Area)
+  # ----------------------------------------
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Preeti Manoharan."
+    subtitle: "I bridge business strategy with data analytics."
+    content: "Experienced Analyst with a demonstrated history of working in the investment management and corporate governance compliance industries. Proficient in optimizing data workflows, financial tracking, and CRM data management."
+    image: /images/me.jpg                  # Default template illustration
+    bottomImage:
+      enable: true
+    button:
+      enable: true                          # Set to true once you have a PDF resume file in 'static/'
+      name: "Download Resume"
+      url: "/resume.docx"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/preeti-manoharan/
+        - icon: fab fa-github
+          url: https://github.com/preetimanoharan
+
+  # ----------------------------------------
+  # About Section
+  # ----------------------------------------
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpg"                  # Points directly to static/images/me.png
+    content: |-
+      I am a finance and data professional specializing in tracking sales pipelines, quantitative market strategy support, and workflow automation. My experience spans scaling operations for institutional wealth management teams to architecting robust data migrations across enterprise CRM platforms. 
+      
+      I thrive at the intersection of structural efficiency, regulatory tracking, and business intelligence.
+    skills:
+      enable: true
+      title: "Core Toolkit & Technologies:"
+      items:
+        - "Data Analysis & SQL"
+        - "Salesforce CRM"
+        - "VBA & Advanced Excel"
+        - "Financial Modeling"
+        - "Risk & Governance Compliance"
+
+  # ----------------------------------------
+  # Experience Section (Homepage Block)
+  # ----------------------------------------
+  experience:
+    enable: true
+    items:
+      - company: "ZI Systech (a.k.a. Sogolytics)"
+        companyUrl: "#"
+        jobs:
+          - name: "Associate Data Analyst, Sales & Marketing Department"
+            date: "Jan 2022 - Dec 2022"
+            content: |
+              - Analyzed leads funnel and conducted competitive research for developing lead generation strategies.
+              - Provided data-driven insights about feasibility of new strategies being considered by top management.
+              - Monitored outcomes of marketing initiatives by analyzing the sales conversion metrics and customer relationship insights.
+              - Led the migration of the marketing team's data onto Salesforce, improving data accuracy and consistency. Eliminated 15% lead data duplication.
+
+      - company: "JP Morgan Services India"
+        companyUrl: "#"
+        jobs:
+          - name: "Analyst, Asset and Wealth Management – Retirement Link"
+            date: "Jan 2021 - Jan 2022"
+            content: |
+              - Worked on pre-sales, on-boarding, and relationship management services of small and mid-size 401k plans.
+              - Developed and implemented over 10 automated reporting tools using VBA Excel and SQL, resulting in labor cost savings of USD 20k per annum with a 60% reduction in manual errors.
+              - Trained team members on process improvement, leading to a 65% increase in turnaround time within one quarter.
+          
+          - name: "Analyst, Asset and Wealth Management – Institutional Sales Strategy & Support"
+            date: "Apr 2018 - Dec 2020"
+            content: |
+              - Prepared prospecting material tailored for institutional clients with a focus on pension funds, endowments, and insurance.
+              - Contributed to retention planning through predictive Business-at-Risk analysis using Salesforce CRM tracking.
+              - Collaborated with Business Intelligence teams on strategic third-party data source integrations.
+              - Winner: Impact Award 2020 for Client Centricity.
+
+      - company: "World Bank Group"
+        companyUrl: "https://www.worldbank.org"
+        jobs:
+          - name: "Intern"
+            date: "Apr 2017 - May 2017"
+            content: |
+              - Completed a specialized professional internship in the Greater Chennai Area.
+
+      - company: "KPMG India"
+        companyUrl: "#"
+        jobs:
+          - name: "Associate Consultant – Governance, Risk & Compliance Services"
+            date: "Feb 2015 - May 2016"
+            content: |
+              - Identified structural risks faced by entities and recommended effective Internal Control measures across HR, Finance, and EXIM operations.
+              - Navigated varied client networks rapidly, reaching proficiency inside 15 days on average across multiple distinct company environments.
+              - Established a comprehensive framework for team audit documentation protocols.
+
+  # ----------------------------------------
+ # ----------------------------------------
+  # FIXED: Matched to theme's nested .school.url requirement
+  # ----------------------------------------
+  education:
+    enable: true
+    title: "Education"
+    items:
+      - title: "MBA"
+        school:
+          name: "Indian Institute of Management Tiruchirappalli"
+          url: "https://www.iimtrichy.ac.in/"
+        date: "2016 - 2018"
+        content: |
+          - Specialized in Finance and Business Strategy.
+          - Member of PlaceCom
+
+      - title: "Chartered Accountancy"
+        school:
+          name: "Institute of Chartered Accountants of India"
+          url: "https://www.icai.org/"
+        date: "2009 - 2014"
+        content: |
+          - Cleared rigorous multi-tiered professional competency examinations.
+          - Mumbai, India
+
+      - title: "Bachelor of Management Studies"
+        school:
+          name: "Mumbai University"
+          url: "https://mu.ac.in/"
+        date: "2009 - 2012"
+        content: |
+          - Graduated with a focus on core management principles and corporate finance.
+          - Mumbai, India
+
+# ----------------------------------------
+  # Projects Section (Homepage Grid)
+  # ----------------------------------------
+  projects:
+    enable: true
+    title: "Projects"
+    items:
+      - title: "Illinois housing market data anaytics"
+        content: "A highly customizable and mobile first Hugo template for personal portfolio and blog."
+        image: "/images/projects/profile.png"
+        featured:
+          name: "Youtube"
+          link: "https://www.youtube.com/watch?v=VcH9MgnGsWI"
+        badges:
+          - "Python"
+          - "Data analytics"
+          - "Visualization"
+        links:
+          - icon: "fab fa-github"
+            url: "https://github.com/preetimanoharan/Python"
+          
+
+      - title: "Data analysis"
+        content: "Showcasing SQL skills"
+        image: "/images/projects/converter.jpg"
+        featured:
+          name: "SQL"
+          link: "https://django-converter.herokuapp.com"
+        badges:
+          - "SQL"
+          - "Data analysis"
+        links:
+          - icon: "fab fa-github"
+            url: "https://github.com/preetimanoharan/SQL"
+
+      - title: "PowerBI"
+        content: "PowerBI skills"
+        image: "/images/projects/profile2.jpg"
+        featured:
+          name: "Demo V2"
+          link: "https://hugo-profile-2.netlify.app"
+        badges:
+          - "PowerBI"
+          - "Business analytics"
+       
+        links:
+          - icon: "fab fa-github"
+            url: "https://github.com/preetimanoharan/Python"
+  # ----------------------------------------
+  # Contact Section
+  # ----------------------------------------
+  contact:
+    enable: true
+    content: "My inbox is always open! Whether you want to discuss data operations, financial analysis, or just connect professionally, feel free to drop me a line."
+    btnName: "Get In Touch"
+    btnLink: mailto:preetimanoharan0108@gmail.com
+
+  # ==========================================
+  # Footer Overrides
+  # ==========================================
+  footer:
+    disableRecentPosts: true
+    customSocialLinks: true
