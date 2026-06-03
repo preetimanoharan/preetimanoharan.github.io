@@ -73,7 +73,7 @@ params:
     title: "Preeti Manoharan."
     subtitle: "I bridge business strategy with data analytics."
     content: "Experienced Analyst with a demonstrated history of working in the investment management and corporate governance compliance industries. Proficient in optimizing data workflows, financial tracking, and CRM data management."
-    image: /images/profile.jpg                  # Default template illustration
+    image: /images/profile_pic.jpg                  # Default template illustration
     bottomImage:
       enable: true
     button:
@@ -94,7 +94,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.jpg"                  # Points directly to static/images/me.png
+    image: "/images/profile_pic.jpg"                  # Points directly to static/images/me.png
     content: |-
       I am a finance and data professional specializing in tracking sales pipelines, quantitative market strategy support, and workflow automation. My experience spans scaling operations for institutional wealth management teams to architecting robust data migrations across enterprise CRM platforms. 
       
