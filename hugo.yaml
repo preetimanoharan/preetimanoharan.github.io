@@ -79,7 +79,7 @@ params:
     button:
       enable: true                          # Set to true once you have a PDF resume file in 'static/'
       name: "Download Resume"
-      url: "/resume.docx"
+      url: "/my-resume.pdf"                      # Ensure this file exists in the 'static' directory of your Hugo project
       download: true
     socialLinks:
       fontAwesomeIcons:
