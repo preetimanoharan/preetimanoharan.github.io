@@ -1,7 +1,7 @@
 # ==========================================
 # Core Hugo Settings
 # ==========================================
-baseURL: "/"                                  # Optimized for local development
+baseURL: "https://preetimanoharan.github.io/"                                  # Optimized for local development
 languageCode: "en-us"
 title: "Preeti Manoharan | Finance & Data Specialist"
 theme: hugo-profile
