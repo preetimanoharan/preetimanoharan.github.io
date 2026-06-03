@@ -222,9 +222,6 @@ params:
       - title: "Data analysis"
         content: "Showcasing SQL skills"
         image: "/images/projects/sql.png"
-        featured:
-          name: "SQL"
-          link: "https://django-converter.herokuapp.com"
         badges:
           - "SQL"
           - "Data analysis"
