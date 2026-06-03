@@ -73,7 +73,7 @@ params:
     title: "Preeti Manoharan."
     subtitle: "I bridge business strategy with data analytics."
     content: "Experienced Analyst with a demonstrated history of working in the investment management and corporate governance compliance industries. Proficient in optimizing data workflows, financial tracking, and CRM data management."
-    image: /images/me.jpg                  # Default template illustration
+    image: /images/profile.jpg                  # Default template illustration
     bottomImage:
       enable: true
     button:
