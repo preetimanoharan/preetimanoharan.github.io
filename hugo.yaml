@@ -235,16 +235,12 @@ params:
       - title: "PowerBI"
         content: "PowerBI skills"
         image: "/images/projects/powerbi.svg"
-        featured:
-          name: "Demo V2"
-          link: "https://hugo-profile-2.netlify.app"
+        
         badges:
           - "PowerBI"
           - "Business analytics"
        
-        links:
-          - icon: "fab fa-github"
-            url: "https://github.com/preetimanoharan/Python"
+        
   # ----------------------------------------
   # Contact Section
   # ----------------------------------------
