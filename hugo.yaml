@@ -206,7 +206,7 @@ params:
     items:
       - title: "Illinois housing market data anaytics"
         content: "A highly customizable and mobile first Hugo template for personal portfolio and blog."
-        image: "/images/projects/profile.png"
+        image: "/images/projects/python.png"
         featured:
           name: "Youtube"
           link: "https://www.youtube.com/watch?v=VcH9MgnGsWI"
@@ -221,7 +221,7 @@ params:
 
       - title: "Data analysis"
         content: "Showcasing SQL skills"
-        image: "/images/projects/converter.jpg"
+        image: "/images/projects/sql.png"
         featured:
           name: "SQL"
           link: "https://django-converter.herokuapp.com"
@@ -234,7 +234,7 @@ params:
 
       - title: "PowerBI"
         content: "PowerBI skills"
-        image: "/images/projects/profile2.jpg"
+        image: "/images/projects/powerbi.svg"
         featured:
           name: "Demo V2"
           link: "https://hugo-profile-2.netlify.app"
